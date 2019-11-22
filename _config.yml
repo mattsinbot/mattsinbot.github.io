@@ -108,7 +108,7 @@ analytics:
 # Site Author
 author:
   name             : "Anirban Sinha"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/images/profile1.png"# path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "PhD student at SUNY Stony Brook"
   location         : "Stony Brook, New York"
   email            :
