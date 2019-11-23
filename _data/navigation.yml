@@ -6,6 +6,10 @@ main:
     url: /mlprojects/
   - title: "Robotics-Projects"
     url: /roboticsprojects/
+  - title: "Controls Projects"
+    url: /controlsprojects/
+  - title: "Algorithms Projects"
+    url: /dsalgprojects/
   # - title: "Sample Collections"
   #   url: /collection-archive/
   # - title: "Sitemap"
