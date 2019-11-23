@@ -2,10 +2,10 @@
 main:
   - title: "About Me"
     url: /about/
-  - title: "ML Projects"
+  - title: "ML-Projects"
     url: /mlprojects/
-  # - title: "Sample Posts"
-  #   url: /year-archive/
+  - title: "Robotics-Projects"
+    url: /roboticsprojects/
   # - title: "Sample Collections"
   #   url: /collection-archive/
   # - title: "Sitemap"
