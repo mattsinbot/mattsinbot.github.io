@@ -1,5 +1,5 @@
 title: "About me"
-permalink: /about/about/
+permalink: /about/
 header:
   image: "/images/deep-learning.jpg"
 ---
