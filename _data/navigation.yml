@@ -6,9 +6,9 @@ main:
     url: /mlprojects/
   - title: "Robotics-Projects"
     url: /roboticsprojects/
-  - title: "Controls Projects"
+  - title: "Controls-Projects"
     url: /controlsprojects/
-  - title: "Algorithms Projects"
+  - title: "Algorithms-Projects"
     url: /dsalgprojects/
   # - title: "Sample Collections"
   #   url: /collection-archive/
