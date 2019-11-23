@@ -1,5 +1,5 @@
 ---
-title: "about"
+title: "About Me"
 permalink: /about/
 header:
   image: "/images/deep-learning.jpg"
