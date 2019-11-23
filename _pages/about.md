@@ -2,7 +2,7 @@
 title: "About Me"
 permalink: /about/
 header:
-  image: "/images/deeplearning.jpg"
+  # image: "/images/deeplearning.jpg"
 ---
 
 Hi! i am Anirban Sinha. I am a fifth year PhD student working in robotics. My expected graduation is in May 2020.
