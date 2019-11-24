@@ -5,7 +5,7 @@ header:
   # image: "/images/deeplearning.jpg"
 ---
 
-Hi! i am Anirban Sinha. I am a fifth year PhD student working in robotics. My expected graduation is in May 2020.
+Hi! I am Anirban Sinha. I am a fifth year PhD student working in robotics. My expected graduation is in May 2020.
 
 **Research:** My research revolves around endowing robots with AI capabilities that ensures self-evaluation of robotic tasks and developing robust algorithms for the same while considering actuation and sensing uncertainties. One branch of my research is path planning of redundant manipulators under task constrained situations.
 
@@ -19,6 +19,4 @@ Hi! i am Anirban Sinha. I am a fifth year PhD student working in robotics. My ex
 
 **Coding Skills:** C++, Python, MATLAB, Robot Operating System (ROS).
 
-**Goal:** My short term goal is to have a comprehesive idea about the problems and state-of-the-art solution techniques, that are in use in autonomous driving industry with hands on experience. My long term goal is to generate new ideas, built on top of the current techniques and make them work in practice and revolutionize the field. 
-
-
+**Goal:** My short term goal is to have a comprehensive idea about the problems and state-of-the-art solution techniques, that are in use in autonomous driving industry with hands on experience. My long term goal is to generate new ideas, built on top of the current techniques and make them work in practice and revolutionize the field.
