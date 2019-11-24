@@ -16,4 +16,4 @@ the NN embeded into the observer. The second observer is designed for Van der Po
 the single-link observer, tests are performed with no-noise training data set and with noisy dataset
 as well. It has been observed that NN based observer learned more accurately and faster from the
 no-noise data set as compared to noisy data set which leads to longer learning time.
-The github link for this project can be found [here](https://github.com/mattsinbot/Neuro-Observer-for-Dynamical-Systems).
+The github link for this project's codes and full documentation report can be found [here](https://github.com/mattsinbot/Neuro-Observer-for-Dynamical-Systems).
