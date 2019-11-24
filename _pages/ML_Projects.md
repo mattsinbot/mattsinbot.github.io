@@ -7,8 +7,8 @@ header:
 
 ### LASSO Regression for Feature Selection
 Least Absolute Shrinkage and Selection Operator or LASSO is a regression method, highly used in Machine learning community for determining important features when number of features are lot more than needed. We have solved LASSO regression problem using synthetic data that finds only 10 important features out of 80 given features that are required to predict correct targets reliably. In short, LASSO regression helps to obtain sparse solution whenever possible. Use have used popular coordinate descent algorithm to minimize the convex loss function of LASSO.
-<!-- The github link for this project can be found
-[here](https://github.com/anirban-bot/Coordinate-descent-LASSO)-->
+<The github link for this project can be found
+[here](https://github.com/mattsinbot/Coordinate-descent-LASSO)>
 
 ### Support Vector Machines Primal and Dual Solution
 This project is associated to binary classification problem using SVM with Quadratic Programming as optimization algorithm. We solve the classification problem in two different ways, first by optimizing the primal formulation of SVM and secondly by solving the dual formulation of SVM. We checked whether both ways provide same solution to validate correctness of the implementation. We also tried to understand how to select a good threshold to find support vectors from the solution provided by quadratic programming.
@@ -20,4 +20,4 @@ Here we use SVM to detect human upper bodies in TV series The Big Bang Theory. T
 
 ### Neural Network to Classify Iris Dataset
 In this project we want to classify different species of Iris flowers from Iris-dataset. This data-set is highly nonlinear and hence can not be classified with linear classifier. We have introduced a three layer (1 input+ 1 hidden + 1 output) neural net which are fully connected to build the classifier. We have developed the model using PyTorch's `torch.nn` module. Our model was able to predict correct labels with 99% accuracy on test data. We have also computed *confusion* matrix to better visualize the prediction pattern of the model.
-<!-- The github link for this project can be found [here](https://github.com/anirban-bot/PyTorch-for-Iris-Dataset) -->
+<The github link for this project can be found [here](https://github.com/mattsinbot/PyTorch-for-Iris-Dataset)>
