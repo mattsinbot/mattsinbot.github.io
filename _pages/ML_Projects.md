@@ -34,3 +34,6 @@ In this project we want to classify different species of Iris flowers from Iris-
 In this project we show with MNIST data set of hand written digits, how to load data in PyTorch, how to do forward pass and backpropagation and finally training a deep-neural-network to recognize hand written digits.
 We will again use PyTorch's `torch.nn` module to build and train the DNN. Once the network is trained, given the image of a hand-written digit as input, the trained model will be able to predict the right digit with high probability value. More details about this project can be found in the Jupyter notebook [here](https://github.com/mattsinbot/Pytorch-ML).
 ![digit_predict](/images/ml/digit_predict.png).
+
+### Machine Learning Lecture Notes
+The repository can be found [here](https://github.com/mattsinbot/Lecture-Slides).
