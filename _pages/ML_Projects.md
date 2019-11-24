@@ -1,6 +1,6 @@
 ---
 title: "Machine Learning Projects"
-permalink: /mlprojects/https://github.com/mattsinbot/Coordinate-Descent-LASSO
+permalink: /mlprojects/
 header:
   # image: "/images/deeplearning.jpg"
 ---
