@@ -18,11 +18,14 @@ Here we use SVM to detect human upper bodies in TV series The Big Bang Theory. T
 ![SVM_hardneg](/images/ml/svm_hard_neg_minig.png)
 
 ### Stochastic Gradient Descent to Train Multiclass SVM
-Look in the repository [here](https://github.com/mattsinbot/SVM-SGD-Multiclass). 
+Look in the repository [here](https://github.com/mattsinbot/SVM-SGD-Multiclass).
 
 
 ### Train a GAN for Activity Recognition
 Look into the *.ipynb* file [here](https://github.com/mattsinbot/Train-GAN-Activity-Recognition).
+
+### Train a SVM to Find Phone
+The task description, solution manual and codes can be found [here](https://github.com/mattsinbot/Find-Phone-SVM).
 
 ### Neural Network to Classify Iris Dataset
 In this project we want to classify different species of Iris flowers from Iris-dataset. This data-set is highly nonlinear and hence can not be classified with linear classifier. We have introduced a three layer (1 input+ 1 hidden + 1 output) neural net which are fully connected to build the classifier. We have developed the model using PyTorch's `torch.nn` module. Our model was able to predict correct labels with 99% accuracy on test data. We have also computed *confusion* matrix to better visualize the prediction pattern of the model. The github link for this project can be found [here](https://github.com/mattsinbot/PyTorch-for-Iris-Dataset).
