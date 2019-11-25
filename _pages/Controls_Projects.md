@@ -2,7 +2,7 @@
 title: "Controls Projects"
 permalink: /controlsprojects/
 header:
-  # image: "/images/deeplearning.jpg"
+  image: "/images/control/control_profile_picture.png"
 ---
 
 ### Design of Neuro-Observer of Robots
