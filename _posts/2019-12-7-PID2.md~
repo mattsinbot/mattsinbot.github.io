@@ -10,12 +10,18 @@ In this post I will show some theoretical analysis of the PID controller that we
 
 # Transfer function of a PID controller
 A PID controller block, takes the error signal as input and generates control output signal. In time domain if we define control input as $$u(t)$$ and error signal as $$e(t)$$, then based on the definition of PID controller, we write
-$$u(t) = K_Pe(t) + K_I\int e(t) + K_D \dot(e(t))$$
-Taking the Laplace transform we get,
-$$U(s) = (K_P + K_I/s + K_Ds)E(s)$$
-Therefore transfer function of the PID block is obtained as,
-$$T(s) = \frac{U(s)}{E(s)} = K_P + K_I/s + K_Ds$$
 
+$$u(t) = K_Pe(t) + K_I\int e(t) + K_D \dot{e(t)}$$
+
+Taking the Laplace transform we get,
+
+$$U(s) = (K_P + K_I/s + K_Ds)E(s)$$
+
+Therefore transfer function of the PID block is obtained as,
+
+$$T(s) = \frac{U(s)}{E(s)} = K_P + \frac{K_I}{s} + K_Ds$$
+
+In some applications, it is beneficial to express $$K_I = K_P/T_i$$ and $$K_D = K_PT_d$$, where $$T_i$$ and $$T_d$$ are integration and derivative time horizons.
 
 After running the above script in python, we can visualize the data as in the figure below.
 ![alt]({{ site.url }}{{ site.baseurl }}/images/control/visualize_recorded_data2.png)
