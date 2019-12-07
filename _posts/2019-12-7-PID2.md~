@@ -24,21 +24,59 @@ $$T(s) = \frac{U(s)}{E(s)} = K_P + \frac{K_I}{s} + K_Ds$$
 In some applications, it is beneficial to express $$K_I = K_P/T_i$$ and $$K_D = K_PT_d$$, where $$T_i$$ and $$T_d$$ are integration and derivative time horizons. This is exactly what we did in [PID experiment post](https://mattsinbot.github.io/PID/) to derive the transfer function.
 
 # Characteristic of Step Response
-There are three main characteristics of the step response. They are,
+There are three main characteristics of the step response.
 1. Rise time
 2. Settling time
 3. Percentage of Overshoot
 
-### Rise time (): 
-The time that the response signal would take to reach to 90% from 10% of the steady-state response.
+**Rise time $$(T_r)$$:** The time that the response signal would take to reach to 90% from 10% of the steady-state response.
+**Settling time $$(T_s)$$:** The time that the response signal would take to settle within 2% error relative to the steady-state response.
+**Percentage of Overshoot:** Percentage difference between the maximum peak of the response and steady state response, relative to the steady state response.
 
-### Settling time:
-The time that the response signal would take to settle within 2% error relative to the steady-state response.
+# Simulated response of turntable
+We are now ready to simulate the response of the same [PID turn-table experiment](https://mattsinbot.github.io/PID/) for a unit step input. After that we will report the step response characteristics for the simulated system.
 
-### Percentage of Overshoot:
-Percentage difference between the maximum peak of the response and steady state response, relative to the steady state response.
+From out experiment we found that, the PID controller parameters are $$K_P = 2, T_d = 5e-4 min, T_i = 5e-5 min$$. We will be using these paameters to implement the controller. The other system parameters are given in [PID turn-table experiment](https://mattsinbot.github.io/PID/) post and will be used them in SI unit form in the simulation.
 
-[here](https://www.mathworks.com/help/control/ref/stepinfo.html)
+The python script for simulating the system response with PID controller is given below.
 
-After running the above script in python, we can visualize the data as in the figure below.
+```python
+from mpmath import *
+import matplotlib.pyplot as plt
+
+def fp(p):
+    # Define the given parameters
+    Ra = 11.5
+    Kb = 12*60/1000
+    Kt = 12*60/1000
+    Km = 16.2*0.02835*9.81*0.0254
+    J = 2.5*0.02835*9.81*(0.0254**2)
+    b = 0
+    Kc = 1
+    Ti = 0.0005*60
+    Td = 0.00005*60
+
+    G = Km/(Ra*(J*p+b)+Kb*Km) # TF of load
+    Gc = Kc*(1 + 1/(Ti*p) + Td*p)
+    # Gc = Kc*(1 + Td*p)
+    # Gc = Kc
+    return Gc*G/(p*(1+Kt*Gc*G))
+
+
+mp.dps = 5; mp.pretty = True
+
+# Generate time vector
+tm = [0.01*tm for tm in range(1, 50)]
+omega_res = [60*invertlaplace(fp,tt,method='talbot') for tt in tm]
+plt.plot(tm, omega_res)
+plt.xlabel("time [s]")
+plt.ylabel(r"$\omega$(t) [RPM]")
+plt.title("Step response for PID controller")
+plt.show()
+```
+The simulated response of the turntable with PID controller is found after running the above script is shown below.
 ![alt]({{ site.url }}{{ site.baseurl }}/images/control/visualize_recorded_data2.png)
+
+<!--[here](https://www.mathworks.com/help/control/ref/stepinfo.html)
+After running the above script in python, we can visualize the data as in the figure below.
+![alt]({{ site.url }}{{ site.baseurl }}/images/control/visualize_recorded_data2.png)-->
