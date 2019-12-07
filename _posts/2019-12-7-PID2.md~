@@ -75,7 +75,7 @@ plt.title("Step response for PID controller")
 plt.show()
 ```
 The simulated response of the turntable with PID controller is found after running the above script is shown below.
-![alt]({{ site.url }}{{ site.baseurl }}/images/control/visualize_recorded_data2.png)
+![alt]({{ site.url }}{{ site.baseurl }}/images/control/pid.png)
 
 <!--[here](https://www.mathworks.com/help/control/ref/stepinfo.html)
 After running the above script in python, we can visualize the data as in the figure below.
