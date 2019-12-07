@@ -89,4 +89,4 @@ plt.legend(loc="best")
 plt.show()
 ```
 After running the above script in python, we can visualize the data as in the figure below.
-![alt]({{ site.url }}{{ site.baseurl }}/images/control/visualize_recorded_data2.png)
+![alt]({{ site.url }}{{ site.baseurl }}/images/control/visualize_recorded_data.png)
