@@ -7,7 +7,7 @@ excerpt: "Kalman Filter for Scientists and Engineers"
 mathjax: "true"
 ---
 
-Kalman filter is an iterative algorithm, to compute sequence of inner hidden states of a process given the sequence of sensor measurement information of the measurable states. Following the Baye's inference rule, the estimated hidden states are the posterior distributions given the prior distribution of those states. The prior distributions of the states are computed using a mathematical process model of the system. In particular we are interested in computing the posterior pdf $$p(x_k\middle z_k)$$.
+Kalman filter is an iterative algorithm, to compute sequence of inner hidden states of a process given the sequence of sensor measurement information of the measurable states. Following the Baye's inference rule, the estimated hidden states are the posterior distributions given the prior distribution of those states. The prior distributions of the states are computed using a mathematical process model of the system. In particular we are interested in computing the posterior pdf $$p(x_k\middle\vert z_k)$$.
 
 One of the key assumption of Kalman filter, is that, all the *probability distribution functions (pdf)* need to be Gaussian distributions.
 
