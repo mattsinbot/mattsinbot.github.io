@@ -116,7 +116,7 @@ plt.grid()
 plt.show()
 ```
 The simulated response of the turntable with PID controller is found after running the above script is shown below.
-![alt]({{ site.url }}{{ site.baseurl }}/images/control/pid_response.png)
+![alt]({{ site.url }}{{ site.baseurl }}/images/control/pid_response2.png)
 
 The **rise time**, **settling time** and **percent of overshoot** values are found to be,
 
@@ -130,6 +130,20 @@ Overshoot: 7.474 %
 The figure below shows the basic LABVIEW program that can be used to acquire and send signal to the system for the DAQ connections as per the post on [PID experiment post](https://mattsinbot.github.io/PID/).
 
 ![alt]({{ site.url }}{{ site.baseurl }}/images/control/labview_code.png)
+
+I only used a few number of code blocks to achieve the above and they are
+- DAQ Assistant (1 input an 1 output)
+- Wavefor Chart
+- Write to Measurement File
+- PID
+- Split Signal
+- While Loop with button
+- While Shift
+- Numeric
+- Cluster
+- Create Control
+- Comparison
+- Elapsed Time
 
 <!--[here](https://www.mathworks.com/help/control/ref/stepinfo.html)
 After running the above script in python, we can visualize the data as in the figure below.
