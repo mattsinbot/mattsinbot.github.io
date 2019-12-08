@@ -7,9 +7,9 @@ excerpt: "Kalman Filter for Scientists and Engineers"
 mathjax: "true"
 ---
 
-Kalman filter is an iterative algorithm, to compute sequence of inner hidden states of a process given the sequence of sensor measurement information of the measurable states. Following the Baye's inference rule, the estimated hidden states are the posterior distributions given the prior distribution of those states. The prior distributions of the states are computed using a mathematical process model of the system. In particular we are interested in computing the posterior pdf $$p(x_k \vert z_k)$$.
+Kalman filter is an iterative algorithm, to compute sequence of inner hidden states of a process given the sequence of sensor measurement information of the measurable states. Following the Baye's inference rule, the estimated hidden states are the posterior distributions given the prior distribution of those states. The prior distributions of the states are computed using a mathematical process model of the system. In particular we are interested in computing the posterior *probability distribution functions (pdf)* $$p(x_k \vert z_k)$$.
 
-One of the key assumption of Kalman filter, is that, all the *probability distribution functions (pdf)* need to be Gaussian distributions.
+One of the key assumption of Kalman filter, is that, all the *pdf* need to be Gaussian distributions.
 
 In order to implement Kalman filter, we need two mathematical models,
 1. Process model (used to predict the prior of the estimation)
@@ -30,7 +30,7 @@ $$x_k = Ax_{k-1} + Bu_{k-1} + w_{k-1}$$
 
 $$z_k = Cx_{k} + Du_{k} + v_{k}$$
 
-In the probabilistic world with Gaussian pdf assumption, the first equation can be used to compute the mean of the pdf $$p(x_k \middle x_{k-1})$$ and measurement pdf $$p(z_k \middle x_k)$$. Next we will show how we can use the pdf $$p(x_k \middle x_{k-1})$$ and pdf $$p(z_k \middle x_k)$$ to compute pdf $$p(x_k \middle z_k)$$ using Baye's rule, which we ultimately care about.
+In the probabilistic world with Gaussian pdf assumption, the first equation can be used to compute the mean of the pdf $$p(x_k \vert x_{k-1})$$ and measurement pdf $$p(z_k \vert x_k)$$. Next we will show how we can use the pdf $$p(x_k \vert x_{k-1})$$ and pdf $$p(z_k \vert x_k)$$ to compute pdf $$p(x_k \vert z_k)$$ using Baye's rule, which we ultimately care about.
 
 
 
