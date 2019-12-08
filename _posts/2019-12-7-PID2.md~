@@ -21,7 +21,9 @@ Therefore transfer function of the PID block is obtained as,
 
 $$T(s) = \frac{U(s)}{E(s)} = K_P + \frac{K_I}{s} + K_Ds$$
 
-In some applications, it is beneficial to express $$K_I = K_P/T_i$$ and $$K_D = K_PT_d$$, where $$T_i$$ and $$T_d$$ are integration and derivative time horizons. This is exactly what we did in [PID experiment post](https://mattsinbot.github.io/PID/) to derive the transfer function.
+In some applications, it is beneficial to express $$K_I = K_P/T_i$$ and $$K_D = K_PT_d$$, where $$T_i$$ and $$T_d$$ are integration and derivative time horizons. This is exactly what we did in [PID experiment post](https://mattsinbot.github.io/PID/) to derive the transfer function. In this case, the transfer function of PID controller block would look like as,
+
+$$T(s) = \frac{U(s)}{E(s)} = K_P(1 + \frac{1}{T_is} + K_Ds$$
 
 # Characteristic of Step Response
 There are three main characteristics of the step response.
@@ -133,11 +135,11 @@ The figure below shows the basic LABVIEW program that can be used to acquire and
 
 I only used a few number of code blocks to achieve the above and they are
 - DAQ Assistant (1 input and 1 output)
-- Wavefor Chart
+- Waveform Chart
 - Write to Measurement File
 - PID
 - Split Signal
-- While Loop with button
+- While Loop with Button
 - While Shift
 - Numeric
 - Cluster
