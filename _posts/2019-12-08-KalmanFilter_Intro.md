@@ -21,6 +21,7 @@ Another key assumption in Kalman filter is that, the Process Model and Measureme
 The process and measurement models can be written generally in discrete form as,
 
 $$x_k = f_{k-1}(x_{k-1}, u_{k-1}, w_{k-1})$$
+
 $$z_k = h_k(x_k, u_k, v_k)$$
 
 where, $$u_k \rightarrow$$ known input signal, $$w_k \rightarrow$$ process noise and $$v_k \rightarrow$$ measurement noise.
