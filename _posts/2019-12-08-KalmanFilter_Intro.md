@@ -7,7 +7,7 @@ excerpt: "Kalman Filter for Scientists and Engineers"
 mathjax: "true"
 ---
 
-Kalman filter is an iterative algorithm, to compute sequence of inner hidden states of a process given the sequence of sensor measurement information of the measurable states. Following the Baye's inference rule, the estimated hidden states are the posterior distributions given the prior distribution of those states. The prior distributions of the states are computed using a mathematical process model of the system.
+Kalman filter is an iterative algorithm, to compute sequence of inner hidden states of a process given the sequence of sensor measurement information of the measurable states. Following the Baye's inference rule, the estimated hidden states are the posterior distributions given the prior distribution of those states. The prior distributions of the states are computed using a mathematical process model of the system. In particular we are interested in computing the posterior pdf $$f(x_k|z_k)$$.
 
 One of the key assumption of Kalman filter, is that, all the *probability distribution functions (pdf)* need to be Gaussian distributions.
 
@@ -24,7 +24,11 @@ $$x_k = f_{k-1}(x_{k-1}, u_{k-1}, w_{k-1})$$
 
 $$z_k = h_k(x_k, u_k, v_k)$$
 
-where, $$u_k \rightarrow$$ known input signal, $$w_k \rightarrow$$ process noise and $$v_k \rightarrow$$ measurement noise.
+where, $$u_k \rightarrow$$ known input signal, $$w_k \rightarrow$$ process noise and $$v_k \rightarrow$$ measurement noise. Further, if the process and measurement functions are linear then we can write,
+
+In the probabilistic world with Gaussian pdf assumption, the first equation can be used to compute the mean of the pdf $$f(x_k|x_{k-1})$$ and measurement pdf $$f(z_k|x_k)$$. Next we will show how we can use the pdf $$f(x_k|x_{k-1})$$ and pdf $$f(z_k|x_k)$$ to compute pdf $$f(x_k|z_k)$$ using Baye's rule, which we ultimately care about.
+
+
 
 
 
