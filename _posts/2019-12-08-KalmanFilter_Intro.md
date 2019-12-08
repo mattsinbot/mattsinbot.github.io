@@ -1,6 +1,6 @@
 ---
 title: "Kalman Filter: Introduction and Intuition"
-date: 2019-11-26
+date: 2019-12-08
 tags: [Estimation Theory, Filtering Methods, Bayesian Inference]
 header:
   <!--image: "/images/posts/kalman_post_header_image.png"-->
