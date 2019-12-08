@@ -34,6 +34,7 @@ In the probabilistic world with Gaussian pdf assumption, the first equation can 
 
 # Bayes Rule to Find Posterior Distribution
 Let $$\mathbb{Z}_k$$ denotes the set of measurement sequences $${z_0, z_1, z_2, \dots, z_k}$$. Then according to Baye's rule,
+
 $$p(x_k \vert \mathbb{Z}_k) = \frac{p(\mathbb{Z}_k \vert x_k) p(x_k)}{p(\mathbb{Z}_k)}$$
 
 $$p(x_k \vert \mathbb{Z}_k) = \frac{p(z_k,\mathbb{Z}_{k-1} \vert x_k) p(x_k)}{p(z_k, \mathbb{Z}_{k-1})}$$
@@ -44,7 +45,7 @@ $$p(x_k \vert \mathbb{Z}_k) = \frac{p(z_k \vert \mathbb{Z}_{k-1}, x_k) p(\mathbb
 
 Further using the joint pdf rule to the term $$p(\mathbb{Z}_{k-1} \vert x_k)$$ we write,
 
-$$p(x_k \vert \mathbb{Z}_k) = \frac{p(z_k \vert \mathbb{Z}_{k-1}, x_k) p(x_k)}{p(z_k, \mathbb{Z}_{k-1}} \frac{p(x_k \vert \mathbb{Z}_{k-1})p(\mathbb{Z}_{k-1})}{p(x_k)}$$
+$$p(x_k \vert \mathbb{Z}_k) = \frac{p(z_k \vert \mathbb{Z}_{k-1}, x_k) p(x_k)}{p(z_k, \mathbb{Z}_{k-1})} \frac{p(x_k \vert \mathbb{Z}_{k-1})p(\mathbb{Z}_{k-1})}{p(x_k)}$$
 
 
   <!--image: "/images/posts/kalman_post_header_image.png"-->
