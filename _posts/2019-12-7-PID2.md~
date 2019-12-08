@@ -11,7 +11,7 @@ In this post I will show some theoretical analysis of the PID controller that we
 # Transfer function of a PID controller
 A PID controller block, takes the error signal as input and generates control output signal. In time domain if we define control input as $$u(t)$$ and error signal as $$e(t)$$, then based on the definition of PID controller, we write
 
-$$u(t) = K_Pe(t) + K_I\int e(t) + K_D \dot{e(t)}$$
+$$u(t) = K_Pe(t) + K_I\int e(t) + K_D \dot{e}(t)$$
 
 Taking the Laplace transform we get,
 
@@ -30,7 +30,9 @@ There are three main characteristics of the step response.
 3. Percentage of Overshoot
 
 **Rise time $$(T_r)$$:** The time that the response signal would take to reach to 90% from 10% of the steady-state response.
+
 **Settling time $$(T_s)$$:** The time that the response signal would take to settle within 2% error relative to the steady-state response.
+
 **Percentage of Overshoot:** Percentage difference between the maximum peak of the response and steady state response, relative to the steady state response.
 
 # Simulated response of turntable
@@ -61,16 +63,49 @@ def fp(p):
     # Gc = Kc*(1 + Td*p)
     # Gc = Kc
     return Gc*G/(p*(1+Kt*Gc*G))          # TF of the whole system
-
+    
+def step_info(resp, t, resp_final):
+	# Find the index for 10% and 90% of total response
+	tol = 1e-1
+	tl_ind, th_ind, ts_ind, tp = 0, 0, 0, 0
+	vl, vh, vs_l, vs_h = 0.10*resp_final, 0.90*resp_final, 0.98*resp_final, 1.02*resp_final
+	peak_val = 0 
+	for ind, val in enumerate(resp):
+		# print(ind, val, abs(val-vs), abs(val-resp_final))
+		if abs(val-vl) < tol:
+			tl_ind = ind
+		if abs(val-vh) < tol:
+			th_ind = ind
+		if ts_ind != 0:
+			if vs_l > val or vs_h < val:
+				ts_ind = 0
+		if vs_l < val and vs_h > val and ts_ind == 0:
+			ts_ind = ind
+		if val > peak_val:
+			peak_val = val
+	print("Rise time: %1.3f sec"%(t[th_ind]-t[tl_ind]))
+	print("Settling time: %1.3f sec"%t[ts_ind])
+	print("Overshoot: %2.3f percent"%((peak_val-resp_final)*100/resp_final))
+	return tl_ind, th_ind, ts_ind
 
 mp.dps = 5; mp.pretty = True
 
+# Set point
+set_pt = 1000/12
+
 # Generate time vector
-tm = [0.001*tm for tm in range(1, 500)]
+tm = [0.0001*tm for tm in range(1, 5000)]
 
 # Multiply the output with 60 to convert RPS to RPM
 omega_res = [60*invertlaplace(fp,tt,method='talbot') for tt in tm] # RPM
+
+# Call step_info
+stepInfo = step_info(omega_res, tm, set_pt)
+
 plt.plot(tm, omega_res)
+plt.plot([tm[stepInfo[0]], tm[stepInfo[0]]], [0, omega_res[stepInfo[0]]], "C1")
+plt.plot([tm[stepInfo[1]], tm[stepInfo[1]]], [0, omega_res[stepInfo[1]]], "C1")
+plt.plot([tm[stepInfo[2]], tm[stepInfo[2]]], [0, omega_res[stepInfo[2]]], "C2")
 plt.xlabel("time [s]")
 plt.ylabel(r"$\omega$(t) [RPM]")
 plt.title("Step response for PID controller")
@@ -78,7 +113,15 @@ plt.grid()
 plt.show()
 ```
 The simulated response of the turntable with PID controller is found after running the above script is shown below.
-![alt]({{ site.url }}{{ site.baseurl }}/images/control/pid.png)
+![alt]({{ site.url }}{{ site.baseurl }}/images/control/pid_response.png)
+
+The **rise time**, **settling time** and **percent of overshoot** values are found to be,
+
+```python
+Rise time: 0.073 sec
+Settling time: 0.235 sec
+Overshoot: 7.474 %
+```
 
 <!--[here](https://www.mathworks.com/help/control/ref/stepinfo.html)
 After running the above script in python, we can visualize the data as in the figure below.
