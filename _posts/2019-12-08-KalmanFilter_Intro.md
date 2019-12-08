@@ -30,7 +30,7 @@ $$x_k = Ax_{k-1} + Bu_{k-1} + w_{k-1}$$
 
 $$z_k = Cx_{k} + Du_{k} + v_{k}$$
 
-In the probabilistic world with Gaussian pdf assumption, the first equation can be used to compute the mean of the pdf $$p(x_k \vert x_{k-1})$$ and measurement pdf $$p(z_k \vert x_k)$$. Next we will show how we can use the pdf $$p(x_k \vert x_{k-1})$$ and pdf $$p(z_k \vert x_k)$$ to compute pdf $$p(x_k \vert z_k)$$ using Baye's rule, which we ultimately care about.
+In the probabilistic world with Gaussian pdf assumption, the first equation can be used to compute the mean of the pdf $$p(x_k \vert x_{k-1})$$ and the second equation to compute the mean of measurement pdf $$p(z_k \vert x_k)$$. Next we will show how we can use the pdf $$p(x_k \vert x_{k-1})$$ and pdf $$p(z_k \vert x_k)$$ to compute pdf $$p(x_k \vert z_k)$$ using Baye's rule, which we ultimately care about.
 
 
 
