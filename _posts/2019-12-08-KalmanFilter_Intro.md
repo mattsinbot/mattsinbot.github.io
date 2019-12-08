@@ -32,7 +32,7 @@ $$z_k = Cx_{k} + Du_{k} + v_{k}$$
 
 In the probabilistic world with Gaussian pdf assumption, the first equation can be used to compute the mean of the pdf $$p(x_k \vert x_{k-1})$$ and the second equation to compute the mean of measurement pdf $$p(z_k \vert x_k)$$. Next we will show how we can use the pdf $$p(x_k \vert x_{k-1})$$ and pdf $$p(z_k \vert x_k)$$ to compute pdf $$p(x_k \vert z_k)$$ using Baye's rule, which we ultimately care about.
 
-# Bayes Rule to Find Posterior Distribution
+# Bayes Rule to Find Posterior
 Let $$\mathbb{Z}_k$$ denotes the set of measurement sequences $${z_0, z_1, z_2, \dots, z_k}$$. Then according to Baye's rule,
 
 $$p(x_k \vert \mathbb{Z}_k) = \frac{p(\mathbb{Z}_k \vert x_k) p(x_k)}{p(\mathbb{Z}_k)}$$
@@ -41,11 +41,11 @@ $$p(x_k \vert \mathbb{Z}_k) = \frac{p(z_k,\mathbb{Z}_{k-1} \vert x_k) p(x_k)}{p(
 
 Using the rule of joint pdf that $$p(a, b) = p(a \vert b) p(b)$$, we can rewrite the above equation as,
 
-$$p(x_k \vert \mathbb{Z}_k) = \frac{p(z_k \vert \mathbb{Z}_{k-1}, x_k) p(\mathbb{Z}_{k-1} \vert x_k) p(x_k)}{p(z_k, \mathbb{Z}_{k-1})}$$
+$$p(x_k \vert \mathbb{Z}_k) = \frac{p(z_k \vert \mathbb{Z}_{k-1}, x_k) p(\mathbb{Z}_{k-1} \vert x_k) p(x_k)}{p(z_k \vert \mathbb{Z}_{k-1}) p(\mathbb{Z}_{k-1})}$$
 
 Further using the joint pdf rule to the term $$p(\mathbb{Z}_{k-1} \vert x_k)$$ we write,
 
-$$p(x_k \vert \mathbb{Z}_k) = \frac{p(z_k \vert \mathbb{Z}_{k-1}, x_k) p(x_k)}{p(z_k, \mathbb{Z}_{k-1})} \frac{p(x_k \vert \mathbb{Z}_{k-1})p(\mathbb{Z}_{k-1})}{p(x_k)}$$
+$$p(x_k \vert \mathbb{Z}_k) = \frac{p(z_k \vert \mathbb{Z}_{k-1}, x_k) p(x_k)}{p(z_k \vert \mathbb{Z}_{k-1}) p(\mathbb{Z}_{k-1}} \frac{p(x_k \vert \mathbb{Z}_{k-1})p(\mathbb{Z}_{k-1})}{p(x_k)}$$
 
 
   <!--image: "/images/posts/kalman_post_header_image.png"-->
