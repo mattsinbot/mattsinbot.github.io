@@ -75,7 +75,27 @@ Knowing the fact that mean of a normally distribution random variable is same as
 - $$\hat{z}_k = \mathbb{E}[z_k \vert \mathbb{Z}_{k-1}] \rightarrow$$ Mean of the measurement
 - $$\tilde{z}_k = z_k - \hat{z}_k \rightarrow$$ Measurement innovation
 
-The subscript $$k$$ is the time index. Please remember the following two points,
+The subscript $$k$$ is the time index. Please note that,
 
 - In practice we can not compute $$\tilde{x}_k^-$$, since, true value, $$x_k$$ is unknown.
 - It can be shown that $$\tilde{x}_k^-$$ and $$\tilde{z}_k$$ are both zero mean Gaussians, with covariance matrices same as that of $$x$$ and $$z$$ respectively. Thus, $$\Sigma_{\tilde{x}} = \Sigma_{x}$$ and $$\Sigma_{\tilde{z}} = \Sigma_{z}$$.
+
+Notice that,
+
+$$\mathbb{E}[\tilde{x}_k^- \vert \mathbb{Z}_k]  = \mathbb{E}[x_k - \hat{x}_k^- \vert \mathbb{Z}_k]$$
+
+$$\mathbb{E}[\tilde{x}_k^- \vert \mathbb{Z}_k]  = \mathbb{E}[x_k \vert \mathbb{Z}_k] - \mathbb{E}[\hat{x}_k^- \vert \mathbb{Z}_k]$$
+
+Using the definitions of $$\hat{x}_k^+$$ and $$\hat{x}_k^-$$ we get,
+
+$$\mathbb{E}[\tilde{x}_k^- \vert \mathbb{Z}_k]  = \hat{x}_k^+ - \hat{x}_k^-$$
+
+$$\hat{x}_k^+ = \hat{x}_k^- + \mathbb{E}[\tilde{x}_k^- \vert \mathbb{Z}_k]$$
+
+Since $$\tilde{x}_k^-$$ already incorporates all the measurement information up to $$\mathbb{Z}_{k-1}$$, we can say that, $$\mathbb{E}[\tilde{x}_k^- \vert \mathbb{Z}_k] = \mathbb{E}[\tilde{x}_k^- \vert z_k]$$. Then we can simplify the above euation as,
+
+$$\hat{x}_k^+ = \hat{x}_k^- + \mathbb{E}[\tilde{x}_k^- \vert z_k]$$
+
+Using the process prediction model, we can compute the $$\hat{x}_k^-$$, but we do not know yet how to compute $$\mathbb{E}[\tilde{x}_k^- \vert z_k]$$. In order to derive the expression of $$\mathbb{E}[\tilde{x}_k^- \vert z_k]$$ in a more tractable form, we will be using the identity with out proof that, for two random variables $$X$$ and $$Z$$
+
+$$\mathbb{E}[X \vert Z] = \mathbb{E}[X] + \Sigma_{XZ}\Sigma_Z^{-1}(Z - \mathbb{Z})$$.
