@@ -98,4 +98,4 @@ $$\hat{x}_k^+ = \hat{x}_k^- + \mathbb{E}[\tilde{x}_k^- \vert z_k]$$
 
 Using the process prediction model, we can compute the $$\hat{x}_k^-$$, but we do not know yet how to compute $$\mathbb{E}[\tilde{x}_k^- \vert z_k]$$. In order to derive the expression of $$\mathbb{E}[\tilde{x}_k^- \vert z_k]$$ in a more tractable form, we will be using the identity with out proof that, for two random variables $$X$$ and $$Z$$
 
-$$\mathbb{E}[X \vert Z] = \mathbb{E}[X] + \Sigma_{XZ}\Sigma_Z^{-1}(Z - \mathbb{Z})$$.
+$$\mathbb{E}[X \vert Z] = \mathbb{E}[X] + \Sigma_{XZ}\Sigma_Z^{-1}(Z - \mathbb{E}[Z])$$.
