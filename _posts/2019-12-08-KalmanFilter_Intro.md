@@ -67,11 +67,12 @@ We can make two key observations from the last equation, at any time step k.
 
 Note that, despite having an insightful analytical expression to find posterior of the states at a time step $$k$$, they can not be implemented as a computer program, the integrals can not be expressed in closed form expression. That sets the topic of the next section.
 
-# Pose Posterior Estimation Problem as Mean, Covariance Estimation Problem
+# Posterior Estimation Problem as Mean, Covariance Estimation Problem
 Knowing the fact that mean of a normally distribution random variable is same as the expected value of the random variable, in this section we will pose the posterior estimation problem as mean, covariance estimation problem. Before we proceed, let me define some notations first.
-- $$\hat{x}_k^+ = \mathbb{E}[x_k \vert \mathbb{Z}_k]$$
-- $$\hat{x}_k^- = \mathbb{E}[x_k \vert \mathbb{Z}_{k-1}]$$
-- $$\tilde{x}_k^- = x_k - \hat{x}_k^-$$
-- $$\hat{z}_k = \mathbb{E}[z_k \vert \mathbb{Z}_{k-1}]$$
-- $$\tilde{x}_k = z_k - \hat{z}_k$$
+- $$\hat{x}_k^+ = \mathbb{E}[x_k \vert \mathbb{Z}_k] \rightarrow$$ Mean of the posterior estimate
+- $$\hat{x}_k^- = \mathbb{E}[x_k \vert \mathbb{Z}_{k-1}] \rightarrow$$ Mean of the prior estimate
+- $$\tilde{x}_k^- = x_k - \hat{x}_k^- \rightarrow$$ Prediction error
+- $$\hat{z}_k = \mathbb{E}[z_k \vert \mathbb{Z}_{k-1}] \rightarrow$$ Mean of the measurement
+- $$\tilde{z}_k = z_k - \hat{z}_k \rightarrow$$ Measurement innovation
+
 The subscript $$k$$ is the time index.
