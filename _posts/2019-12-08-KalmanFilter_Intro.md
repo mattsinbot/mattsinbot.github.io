@@ -64,6 +64,6 @@ $$p_{posterior_k} \propto p_{measurement_k} * p_{prior_k}$$
 
 We can make two key observations from the last equation, at any time step k.
 1. Knowing the pdf of the measurement and prior, the posterior distribution can be computed.
-2. The prior $$p(x_k \vert \mathbb{Z}_{k-1}) = \int_{R_{x_{k-1}}}p(x_k \vert x_{k-1})p(x_{k-1} \vert \mathcal{Z}_{k-1})$$. So there is a recursive relationship.
+2. The prior $$p(x_k \vert \mathbb{Z}_{k-1}) = \int_{R_{x_{k-1}}}p(x_k \vert x_{k-1})p(x_{k-1} \vert \mathbb{z}_{k-1})$$. So there is a recursive relationship.
 
   <!--image: "/images/posts/kalman_post_header_image.png"-->
