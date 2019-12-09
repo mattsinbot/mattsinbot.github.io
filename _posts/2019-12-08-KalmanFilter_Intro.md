@@ -45,7 +45,24 @@ $$p(x_k \vert \mathbb{Z}_k) = \frac{p(z_k \vert \mathbb{Z}_{k-1}, x_k) p(\mathbb
 
 Further using the joint pdf rule to the term $$p(\mathbb{Z}_{k-1} \vert x_k)$$ we write,
 
-$$p(x_k \vert \mathbb{Z}_k) = \frac{p(z_k \vert \mathbb{Z}_{k-1}, x_k) p(x_k)}{p(z_k \vert \mathbb{Z}_{k-1}) p(\mathbb{Z}_{k-1}} \frac{p(x_k \vert \mathbb{Z}_{k-1})p(\mathbb{Z}_{k-1})}{p(x_k)}$$
+$$p(x_k \vert \mathbb{Z}_k) = \frac{p(z_k \vert \mathbb{Z}_{k-1}, x_k) p(x_k)}{p(z_k \vert \mathbb{Z}_{k-1}) p(\mathbb{Z}_{k-1})} \frac{p(x_k \vert \mathbb{Z}_{k-1})p(\mathbb{Z}_{k-1})}{p(x_k)}$$
 
+Simplifying we get,
+
+$$p(x_k \vert \mathbb{Z}_k) = \frac{p(z_k \vert \mathbb{Z}_{k-1}, x_k)p(x_k \vert \mathbb{Z}_{k-1})}{p(z_k \vert \mathbb{Z}_{k-1})}$$
+<!-- p(z_k \vert \mathbb{Z}_{k-1}, x_k) = p(z_k \vert \mathbb{Z}_{k-1}, x_k)-->
+Since all the information provided by $$\mathbb{Z}_{k-1}$$ is already incorporated in $$x_k$$, without loss of generality, we can say that $$p(z_k \vert \mathbb{Z}_{k-1}, x_k) = p(z_k \vert x_k)$$. Then the above equation is further simplified to,
+
+$$p(x_k \vert \mathbb{Z}_k) = \frac{p(z_k \vert x_k)p(x_k \vert \mathbb{Z}_{k-1})}{p(z_k \vert \mathbb{Z}_{k-1})}$$
+
+Therefore,
+
+$$p(x_k \vert \mathbb{Z}_k) \prop p(z_k \vert x_k)p(x_k \vert \mathbb{Z}_{k-1})$$
+
+$$p_{posterior_k} \prop p_{measurement_k} * p_{prior_k}$$
+
+We can make two key observations from the last equation, at any time step k.
+1. Knowing the pdf of the measurement and prior, the posterior distribution can be computed.
+2. The prior $$p(x_k \vert \mathbb{Z}_{k-1}) = \int_{R_{x_{k-1}}}p(x_k \vert x_{k-1})p(x_{k-1} \vert \mathcal{Z}_{k-1})$$. So there is a recursive relationship.
 
   <!--image: "/images/posts/kalman_post_header_image.png"-->
