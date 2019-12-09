@@ -17,7 +17,7 @@ In order to implement Kalman filter, we need two mathematical models,
 
 Another key assumption in Kalman filter is that, the Process Model and Measurement Model has to be linear in terms of the parameters. Although, extended Kalman Filter do not need this linearity assumption.
 
-# Prediction Models of Dynamic System
+# Prediction Models for Process and Measurement of an Autonomous System
 The process and measurement models can be written generally in discrete form as,
 
 $$x_k = f_{k-1}(x_{k-1}, u_{k-1}, w_{k-1})$$
