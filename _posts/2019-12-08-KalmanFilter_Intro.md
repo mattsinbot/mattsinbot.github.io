@@ -75,4 +75,7 @@ Knowing the fact that mean of a normally distribution random variable is same as
 - $$\hat{z}_k = \mathbb{E}[z_k \vert \mathbb{Z}_{k-1}] \rightarrow$$ Mean of the measurement
 - $$\tilde{z}_k = z_k - \hat{z}_k \rightarrow$$ Measurement innovation
 
-The subscript $$k$$ is the time index.
+The subscript $$k$$ is the time index. Please remember the following two points,
+
+- In practice we can not compute $$\tilde{x}_k^-$$, since, true value, $$x_k$$ is unknown.
+- It can be shown that $$\tilde{x}_k^-$$ and $$\tilde{z}_k$$ are both zero mean Gaussians, with covariance matrices same as that of $$x$$ and $$z$$ respectively. Thus, $$\Sigma_{\tilde{x}} = \Sigma_{x}$$ and $$\Sigma_{\tilde{z}} = \Sigma_{z}$$.
