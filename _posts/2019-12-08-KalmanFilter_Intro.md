@@ -116,15 +116,15 @@ Writing $$\Sigma_{\tilde{x}_k\tilde{z}_k}\Sigma_{\tilde{z}_k}^{-1} = L_k$$ (also
 
 $$\hat{x}_k^+ = \hat{x}_k^- + L_k \tilde{z}_k$$
 
-Next we will derive the covariance of $$\hat{x}_k^+$$, $$\Sigma_{\tilde{x}_k^+$$.
+Next we will derive the covariance of $$\hat{x}_k^+$$, $$\Sigma_{\tilde{x}_k^+}$$.
 
-$$\hat{x}_k^+ = \mathbb{E[(x_k - \hat{x}_k^+)(x_k - \hat{x}_k^+)^T]}$$
+$$\hat{x}_k^+ = \mathbb{E}[(x_k - \hat{x}_k^+)(x_k - \hat{x}_k^+)^T]$$
 
-$$\hat{x}_k^+ = \mathbb{E[(x_k - (\hat{x}_k^-+L_kz_k))(x_k - (\hat{x}_k^-+L_kz_k))^T]}$$
+$$\hat{x}_k^+ = \mathbb{E}[(x_k - (\hat{x}_k^-+L_kz_k))(x_k - (\hat{x}_k^-+L_kz_k))^T]$$
 
-$$\hat{x}_k^+ = \mathbb{E}[(\tilde{x_k}^- - L_k\tilde{z}_k)(\tilde{x_k}^- - L_k\tilde{z}_k)^T]$$
+$$\hat{x}_k^+ = \mathbb{E}[(\tilde{x}_k^- - L_k\tilde{z}_k)(\tilde{x}_k^- - L_k\tilde{z}_k)^T]$$
 
-$$\hat{x}_k^+ = \mathbb{E}[\tilde{x_k}^-\tilde{x_k}^-^T - L_k\tilde{z}_k\tilde{x_k}^-^T - L_k\tilde{x_k}^-\tilde{z_k}^TL_k^T + L_k\tilde{z}_k\tilde{z}_k^TL_k^T]$$
+$$\hat{x}_k^+ = \mathbb{E}[\tilde{x}_k^-\tilde{x}_{k^-}^T - L_k\tilde{z}_k\tilde{x}_{k^-}^T - L_k\tilde{x}_{k^-}\tilde{z_k}^TL_k^T + L_k\tilde{z}_k\tilde{z}_k^TL_k^T]$$
 
 $$\Sigma_{\hat{x}_k}^+ = \mathbb{E}[\tilde{x_k}^-\tilde{x_k}^-^T] - 2\mathbb{E}[\tilde{z}_k\tilde{x_k}^-^T]L_k^T + L_k \mathbb{E}[\tilde{z}_k\tilde{z}_k^T]L_k^T$$
 
