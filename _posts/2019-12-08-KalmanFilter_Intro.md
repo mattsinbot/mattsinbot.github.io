@@ -128,9 +128,9 @@ $$\hat{x}_k^+ = \mathbb{E}[\tilde{x}_k^-\tilde{x}_{k^-}^T - L_k\tilde{z}_k\tilde
 
 $$\Sigma_{\hat{x}_k}^+ = \mathbb{E}[\tilde{x}_{k^-}\tilde{x}_{k^-}^T] - 2\mathbb{E}[\tilde{x}_k\tilde{z}_{k^-}^T]L_k^T + L_k \mathbb{E}[\tilde{z}_k\tilde{z}_k^T]L_k^T$$
 
-$$\Sigma_{\hat{x}_k}^+ = \mathbb{E}[\tilde{x}_{k^-}\tilde{x}_{k^-}^T] - 2\Sigma_{\tilde{z}_k\tilde{x}_{k^-}L_k + L_k \mathbb{E}[\tilde{z}_k\tilde{z}_k^T]L_k^T$$
+$$\Sigma_{\hat{x}_k}^+ = \mathbb{E}[\tilde{x}_{k^-}\tilde{x}_{k^-}^T] - 2\Sigma_{\tilde{z}_k\tilde{x}_{k^-}}L_k + L_k \mathbb{E}[\tilde{z}_k\tilde{z}_k^T]L_k^T$$
 
-Since $$L_k = \Sigma_{\tilde{x}_k\tilde{z}_k}\Sigma_{\tilde{z}_k}^{-1}$$, we get $$\Sigma_{\tilde{z}_k\tilde{x}_{k^-} =$$, then
+Since $$L_k = \Sigma_{\tilde{x}_k\tilde{z}_k}\Sigma_{\tilde{z}_k}^{-1}$$, we get $$\Sigma_{\tilde{z}_k\tilde{x}_{k^-}} = L_k\Sigma_{\tilde{z}_k}$$, then
 
 $$\Sigma_{\hat{x}_k}^+ = \mathbb{E}[\tilde{x}_{k^-}\tilde{x}_{k^-}^T] - 2L_k\Sigma_{\tilde{z}_k}L_k^T + L_k \Sigma\tilde{z}_kL_k^T$$
 
