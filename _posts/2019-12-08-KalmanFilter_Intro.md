@@ -96,6 +96,18 @@ Since $$\tilde{x}_k^-$$ already incorporates all the measurement information up 
 
 $$\hat{x}_k^+ = \hat{x}_k^- + \mathbb{E}[\tilde{x}_k^- \vert z_k]$$
 
-Using the process prediction model, we can compute the $$\hat{x}_k^-$$, but we do not know yet how to compute $$\mathbb{E}[\tilde{x}_k^- \vert z_k]$$. In order to derive the expression of $$\mathbb{E}[\tilde{x}_k^- \vert z_k]$$ in a more tractable form, we will be using the identity with out proof that, for two random variables $$X$$ and $$Z$$
+Using the process prediction model, we can compute the $$\hat{x}_k^-$$, but we do not know yet how to compute $$\mathbb{E}[\tilde{x}_k^- \vert z_k]$$. In order to derive the expression of $$\mathbb{E}[\tilde{x}_k^- \vert z_k]$$ in a more tractable form, we will be using the identity with out proof that, for two random variables $$X$$ and $$Z$$, the expectation of $X$ given $Z$ is, $$\mathbb{E}[X \vert Z] = \mathbb{E}[X] + \Sigma_{XZ}\Sigma_Z^{-1}(Z - \mathbb{E}[Z])$$. Thus,
 
-$$\mathbb{E}[X \vert Z] = \mathbb{E}[X] + \Sigma_{XZ}\Sigma_Z^{-1}(Z - \mathbb{E}[Z])$$.
+$$\mathbb{E}[\tilde{x}_k^- \vert z_k] = \mathbb{E}[\tilde{x}_k^-] + \Sigma_{\tilde{x}\tilde{z}}\Sigma_{\tilde{z}}^{-1}(z_k - \mathbb{E}[z_k])$$
+
+Using the fact that, $$z_k = \hat{z}_k + \tilde{z}_k$$, we find,
+
+$$\mathbb{E}[\tilde{x}_k^- \vert z_k] = \mathbb{E}[\tilde{x}_k^-] + \Sigma_{\tilde{x}\tilde{z}}\Sigma_{\tilde{z}}^{-1}(\hat{z}_k + \tilde{z}_k - \mathbb{E}[\hat{z}_k + \tilde{z}_k])$$
+
+Since, $$\mathbb{E}[\tilde{x}_k^-] = 0$$ (proof link),
+
+$$\mathbb{E}[\tilde{x}_k^- \vert z_k] = 0 + \Sigma_{\tilde{x}\tilde{z}}\Sigma_{\tilde{z}}^{-1}(\hat{z}_k + \tilde{z}_k - \mathbb{E}[\hat{z}_k] + \mathbb{E}[\tilde{z}_k])$$
+
+$$\mathbb{E}[\tilde{x}_k^- \vert z_k] = \Sigma_{\tilde{x}\tilde{z}}\Sigma_{\tilde{z}}^{-1}(\hat{z}_k + \tilde{z}_k - 0 - \mathbb{E}[\tilde{z}_k])$$
+
+$$\mathbb{E}[\tilde{x}_k^- \vert z_k] = \Sigma_{\tilde{x}\tilde{z}}\Sigma_{\tilde{z}}^{-1} \tilde{z}_k$$
