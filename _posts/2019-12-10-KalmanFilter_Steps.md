@@ -14,29 +14,29 @@ For any time step $$k$$,
 
 **A. Prediction step**
 
-1. Based on the prior measurements $$\mathbb{Z}_{k-1}$$, compute the expected value of the prior prediction $$\hat{x}_k^-$$.
+- Based on the prior measurements $$\mathbb{Z}_{k-1}$$, compute the expected value of the prior prediction $$\hat{x}_k^-$$.
 
 $$\hat{x}_k^- = \mathbb{E}[x_k \vert \mathbb{Z}_{k-1}] = \mathbb{E}[f_{k-1}(x_{k-1}, u_{k-1}, w_{k-1}) \vert \mathbb{Z}_{k-1}]$$
 
-2. Determine the error covariance of the prior state estimate.
+- Determine the error covariance of the prior state estimate.
 
 $$\Sigma_{\tilde{x}_k}^- = \mathbb{E}[(\tilde{x}_k^-)(\tilde{x}_k^-)^T]$$
 
-3. Predict the measurement using prior state estimate.
+- Predict the measurement using prior state estimate.
 
 $$\hat{z}_k = \mathbb{E}[z_k \vert \mathbb{Z}_{k-1}] = \mathbb{E}[h_k(x_k, u_k, v_k) \vert \mathbb{Z}_{k-1}]$$
 
 **B. Correction/Update step**
 
-1. Compute the Kalman gain matrix.
+- Compute the Kalman gain matrix.
 
 $$l_k = \Sigma_{\tilde{x}_k\tilde{z}_k}^-\Sigma_{\tilde{z}_k}^{-1}$$
 
-2. Determine expected state vector of the posterior estimation.
+- Determine expected state vector of the posterior estimation.
 
 $$\hat{x}_k^+ = \hat{x}_k^- + L_k(z_k - \hat{z}_k)$$
 
-3. Compute the covariance matrix of the posterior estimation.
+- Compute the covariance matrix of the posterior estimation.
 
 $$\Sigma_{\tilde{x}_k}^+ = \mathbb{E}[(\tilde{x}_k^+)(\tilde{x}_k^+)^T]$$
 
