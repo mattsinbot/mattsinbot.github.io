@@ -11,7 +11,9 @@ This post will summarize the basic steps required to implement Kalman filter in 
 We will divide the prediction and update step each into three sub-steps.
 
 For any time step $$k$$,
+
 **A. Prediction step**
+
 1. Based on the prior measurements $$\mathbb{Z}_{k-1}$$, compute the expected value of the prior prediction $$\hat{x}_k^-$$.
 
 $$\hat{x}_k^- = \mathbb{E}[x_k \vert \mathbb{Z}_{k-1}] = \mathbb{E}[f_{k-1}(x_{k-1}, u_{k-1}, w_{k-1}) \vert \mathbb{Z}_{k-1}]$$
@@ -24,7 +26,8 @@ $$\Sigma_{\tilde{x}_k}^- = \mathbb{E}[(\tilde{x}_k^-)(\tilde{x}_k^-)^T]$$
 
 $$\hat{z}_k = \mathbb{E}[z_k \vert \mathbb{Z}_{k-1}] = \mathbb{E}[h_k(x_k, u_k, v_k) \vert \mathbb{Z}_{k-1}]$$
 
-**A. Correction/Update step**
+**B. Correction/Update step**
+
 1. Compute the Kalman gain matrix.
 
 $$l_k = \Sigma_{\tilde{x}_k\tilde{z}_k}^-\Sigma_{\tilde{z}_k}^{-1}$$
