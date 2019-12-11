@@ -40,4 +40,4 @@ $$\hat{x}_k^+ = \hat{x}_k^- + L_k(z_k - \hat{z}_k)$$
 
 $$\Sigma_{\tilde{x}_k}^+ = \mathbb{E}[(\tilde{x}_k^+)(\tilde{x}_k^+)^T]$$
 
-$$\Sigma_{\tilde{x}_k}^+ = \Sigma_{\tilde{x}_k}^- - L_k\Sigma_{\tilde{z}_k}L_k^T$$
+$$\Sigma_{\tilde{x}_k}^+ = \Sigma_{\tilde{x}_k}^- - L_k\Sigma_{\tilde{z}_k}L_k^T$$ (Using the last proof in the [previous post](https://mattsinbot.github.io/KalmanFilter_Intro/))
