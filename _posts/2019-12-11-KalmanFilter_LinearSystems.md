@@ -7,7 +7,7 @@ excerpt: "Kalman Filter: Basic Steps"
 mathjax: "true"
 ---
 
-In this post, I will derive each steps that has been presented in [Kalman Filter: An Implementation Perspective]{https://mattsinbot.github.io/KalmanFilter_Steps/} for a system which has linear process and measurement models.
+In this post, I will derive each steps that has been presented in [Kalman Filter: An Implementation Perspective](https://mattsinbot.github.io/KalmanFilter_Steps/) for a system which has linear process and measurement models.
 
 A system is called linear if the *process* and *measurement* models are linear with respect to the parameters. The linear process and measurement models can be defined as,
 
