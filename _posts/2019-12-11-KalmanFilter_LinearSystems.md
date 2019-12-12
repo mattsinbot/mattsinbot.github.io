@@ -17,7 +17,7 @@ $$z_k = C_kx_k + D_ku_k + v_k$$
 
 The process and measurement noise vectors $$w_k$$ and $$z_k$$ are uncorrelated white Gaussians. Further to note that, these noises are zero mean and known covariance matrices.
 
-$$\mathbb{E}[(w_k)(w_k)^T] = \Sigma_{\tilde{w}}$$, $$\mathbb{E}[(v_k)(v_k)^T] = \Sigma_{\tilde{v}}$$ and $$\mathbb{E}[(w_k)(x_0)^T]=0$$.
+$$\mathbb{E}[(w_k)(w_k)^T] = \Sigma_{\tilde{w}}$$ and $$\mathbb{E}[(v_k)(v_k)^T] = \Sigma_{\tilde{v}}$$ and $$\mathbb{E}[(w_k)(x_0)^T]=0$$.
 
 **Prediction step - 1A:** Expected prior estimate
 
