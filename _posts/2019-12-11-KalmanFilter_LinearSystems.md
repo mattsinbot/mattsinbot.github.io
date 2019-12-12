@@ -49,9 +49,9 @@ $$= \mathbb{E}[\left(A_{k-1}\tilde{x}_{k-1}^+ + w_{k-1}\right)\left(A_{k-1}\tild
 
 $$= A_{k-1}\mathbb{E}[(\tilde{x}_{k-1}^+)(\tilde{x}_{k-1}^+)^T]A_{k-1}^T + 2\mathbb{E}[w_{k+1}\tilde{x}_{k+1}^{+T}]A_{k-1}^T + \mathbb{E}[(w_{k+1})(w_{k+1})^T]$$
 
-$$\Sigma_{\tilde{x}_k}^- =  A_{k-1}\Sigma_{\tilde{x}_{k-1}^+A_{k-1}^T + \Sigma_{\tilde{w}}$$
+$$\Sigma_{\tilde{x}_k}^- =  A_{k-1}\Sigma_{\tilde{x}_{k-1}}^+A_{k-1}^T + \Sigma_{\tilde{w}}$$
 
-**Prediction step - 3C:** Predict measurement
+**Prediction step - 3A:** Predict measurement
 
 $$\hat{z}_k = \mathbb{E}[h_k(x_k, u_k, v_k) \vert \mathbb{Z}_{k-1}]$$
 
