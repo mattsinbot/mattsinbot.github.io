@@ -63,7 +63,7 @@ $$\hat{z}_{k} = C_k\hat{x}_k^- + D_ku_k$$
 
 **Update step - 1B:** Determine Kalman gain matrix
 
-We already have derived Kalman gain matrix in the [post](https://mattsinbot.github.io/KalmanFilter_Intro/) as
+We already have derived Kalman gain matrix in the [previous post](https://mattsinbot.github.io/KalmanFilter_Intro/) as
 $$L_k = \Sigma_{\tilde{x}_k\tilde{z}_k}^- \Sigma{\tilde{z}_k}^{-1}$$
 
 Next we will first derive the two covari6ance matrices on the right hand side for a linear system and then combine them.
