@@ -5,7 +5,7 @@ header:
   # image: "/images/deeplearning.jpg"
 ---
 
-Hi! I am Anirban Sinha. I am a fifth year PhD student working in robotics. My expected graduation is in May 2020.
+Hi! I am Anirban Sinha. I am a fifth year PhD student working in robotics.
 
 **Research:** My research revolves around endowing robots with AI capabilities that ensures self-evaluation of robotic tasks and developing robust algorithms for the same while considering actuation and sensing uncertainties. One branch of my research is path planning of redundant manipulators under task constrained situations.
 
