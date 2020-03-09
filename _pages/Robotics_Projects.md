@@ -13,7 +13,7 @@ The repository can be found [here](https://github.com/mattsinbot/Localize-Fusing
 ### EKF-SLAM using UTIAS dataset
 The repository can be found [here](https://github.com/mattsinbot/SLAM-Self-Driving-Car).
 
-#### Wrapping C for Python Use of IKFast
+### Wrapping C for Python Use of IKFast
 The repository can be found[here](https://github.com/mattsinbot/Wrapping-C--for-Python-InverseKinematics).
 
 ### ROS packages for using Realsense and Aruco
