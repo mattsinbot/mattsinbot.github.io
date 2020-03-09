@@ -4,6 +4,11 @@ permalink: /roboticsprojects/
 header:
   # image: "/images/deeplearning.jpg"
 ---
+### Monte-Carlo-Localization for Tracking a Moving Object
+The repository can be found [here](https://github.com/mattsinbot/Localize-Car-MCL).
+
+### Robust Localization Fusing LASER and RADAR Data
+The repository can be found [here](https://github.com/mattsinbot/Localize-Fusing-Radar-Laser).
 
 ### EKF-SLAM using UTIAS dataset
 The repository can be found [here](https://github.com/mattsinbot/SLAM-Self-Driving-Car).
