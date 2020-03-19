@@ -1,5 +1,5 @@
 ---
-title: "Data-Structures and Algorithms Projects"
+title: "Software Engineering"
 permalink: /dsalgprojects/
 header:
   # image: "/images/deeplearning.jpg"
