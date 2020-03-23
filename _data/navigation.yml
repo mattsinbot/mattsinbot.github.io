@@ -2,13 +2,13 @@
 main:
   - title: "About Me"
     url: /about/
-  - title: "ML-Projects"
+  - title: "ML"
     url: /mlprojects/
-  - title: "Robotics-Projects"
+  - title: "Robotics"
     url: /roboticsprojects/
-  - title: "Controls-Projects"
+  - title: "Controls"
     url: /controlsprojects/
-  - title: "SoftwareEngg-Projects"
+  - title: "Software-Engg"
     url: /dsalgprojects/
   # - title: "Sample Collections"
   #   url: /collection-archive/
