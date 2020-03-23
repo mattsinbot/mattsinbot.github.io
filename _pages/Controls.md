@@ -1,5 +1,5 @@
 ---
-title: "Controls Projects"
+title: "Control Project"
 permalink: /controlsprojects/
 header:
   image: "/images/control/control_profile_picture.png"
@@ -16,7 +16,7 @@ the NN embeded into the observer. The second observer is designed for Van der Po
 the single-link observer, tests are performed with no-noise training data set and with noisy dataset
 as well. It has been observed that NN based observer learned more accurately and faster from the
 no-noise data set as compared to noisy data set which leads to longer learning time.
-The github link for this project's codes and full documentation report can be found [here](https://github.com/mattsinbot/Neuro-Observer-for-Dynamical-Systems).
+The GitHub link for this project's codes and full documentation report can be found [here](https://github.com/mattsinbot/Neuro-Observer-for-Dynamical-Systems).
 
 ### EKF-for-Trajectory-Estimation
 The project focuses on the control of a mobile robot that intends to go from a given initial position to a desired goal position. The robot has to generate a path from initial to final position while avoiding obstacles simultaneously. The robot here is considered as a point mass robot.
@@ -31,6 +31,7 @@ The project focuses on the control of a mobile robot that intends to go from a g
 8. Implementing Separation-Principle to combine Controller and Observer
 
 ![evol_cost](/images/control/Value_growth9.gif)
+
 **Evolution of cost in Value-Iteration**
 
 ![exp_op](/images/control//Obs_Avoidance196.gif)
