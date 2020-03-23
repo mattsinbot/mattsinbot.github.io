@@ -12,7 +12,7 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "dark" # "default", "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "air" # "default", "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "en-US"
@@ -109,7 +109,7 @@ analytics:
 author:
   name             : "Anirban Sinha"
   avatar           : "/images/profile1.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "PhD student at SUNY Stony Brook"
+  bio              : "PhD Candidate at SUNY Stony Brook"
   location         : "Stony Brook, New York"
   email            : "anirban.sinha@stonybrook.edu"
   links:
@@ -303,6 +303,3 @@ defaults:
     values:
       layout: single
       author_profile: false
-      # comments: true
-      # share: true
-      # read_time: true
