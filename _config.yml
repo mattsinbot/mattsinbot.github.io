@@ -18,7 +18,7 @@ minimal_mistakes_skin    : "dark" # "default", "air", "aqua", "contrast", "dark"
 locale                   : "en-US"
 title                    : "Anirban's Projects"
 title_separator          : "-"
-# subtitle                 : # site tagline that appears below site title in masthead
+subtitle                 : "Robotics,AI,ML,SoftwareEngg"
 name                     : "Anirban Sinha"
 description              : "Classic Projects"
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
@@ -38,7 +38,7 @@ comments:
   facebook:
     # https://developers.facebook.com/docs/plugins/comments
     appid                :
-    num_posts            : #5 (default)
+    num_posts            : 10 (default)
     colorscheme          : # "light" (default), "dark"
   utterances:
     theme                : # "github-light" (default), "github-dark"
@@ -109,7 +109,7 @@ analytics:
 author:
   name             : "Anirban Sinha"
   avatar           : "/images/profile1.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "PhD Candidate at SUNY Stony Brook"
+  bio              : "PhD Candidate at The State University of New York"
   location         : "Stony Brook, New York"
   email            : "anirban.sinha@stonybrook.edu"
   links:
@@ -289,7 +289,7 @@ defaults:
       path: ""
       type: posts
     values:
-      layout: single
+      layout: double
       author_profile: false
       read_time: true
       comments: true
