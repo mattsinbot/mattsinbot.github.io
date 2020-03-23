@@ -34,4 +34,5 @@ The project focuses on the control of a mobile robot that intends to go from a g
 **Evolution of cost in Value-Iteration**
 
 ![exp_op](/images/control//Obs_Avoidance196.gif)
+
 **Figure above shows, how a robot uses partially observable states to reach from start to goal while avoiding the obstacles**
