@@ -16,11 +16,11 @@ minimal_mistakes_skin    : "dark" # "default", "air", "aqua", "contrast", "dark"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Anirban Sinha Projects"
+title                    : "Anirban's Projects"
 title_separator          : "-"
-subtitle                 : # site tagline that appears below site title in masthead
+# subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Anirban Sinha"
-description              : "Anirban's profile"
+description              : "Classic Projects"
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -38,7 +38,7 @@ comments:
   facebook:
     # https://developers.facebook.com/docs/plugins/comments
     appid                :
-    num_posts            : 10 (default)
+    num_posts            : #5 (default)
     colorscheme          : # "light" (default), "dark"
   utterances:
     theme                : # "github-light" (default), "github-dark"
