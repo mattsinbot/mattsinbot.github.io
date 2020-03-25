@@ -51,11 +51,11 @@ The key steps in achieving robust localization fusing sensor data are as follows
 4. The measurement update is done using Kalman Filter (KF) or Extended Kalman Filter (EKF) depending on the current measurement is from LASER or RADAR. Since the measurement equation of the RADAR is non-linear we need to use EKF for the update step.
 
 The relevant equations used for prediction and steps are show in the figure below,
-![concept figure](./figures/sensor_fusion_concept_figure.png).
+![concept figure](./images/sensor_fusion_concept_figure.png).
 The matrix `H` in the update-KF step indicates linear measurement model (LASER) whereas `H_j` in the update-EKF step is the Jacobian of the non-linear measurement model (RADAR).
 
 The output is shown in animation in the top figure where blue and red triangles denote noisy measurements of the car obtained from the RADAR and LASER respectively. The estimated pose obtained by fusing these two sensor information using EKF is shown as green dots. Finally estimated path is compared with ground truth data in the figure below.
-![concept figure](./figures/est_gth_compare.png)
+![concept figure](./images/est_gth_compare.png)
 
 
 ### EKF-SLAM using UTIAS dataset
