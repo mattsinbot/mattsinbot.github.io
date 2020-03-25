@@ -7,7 +7,7 @@ header:
 ### Multi-Threading-CPP
 Visit the repository [here](https://github.com/mattsinbot/Multi-Threading-CPP).
 
-![output_image](./images/software/Traffic_Signal.gif)
+![output_image](/images/software/Traffic_Signal.gif)
 
 Traffic signal control for safe driving using C++. There are two rules to cross a junction by any vehicle (moving circles)
 * wait unless the traffic signal associated to that junction is green.
