@@ -5,8 +5,8 @@ header:
   # image: "/images/deeplearning.jpg"
 ---
 
-### EKF-for-Trajectory-Estimation
-The project focuses on the control of a mobile robot that intends to go from a given initial position to a desired goal position. The robot has to generate a path from initial to final position while avoiding obstacles simultaneously. The robot here is considered as a point mass robot.
+### Find path using reinforcement learning and EKF based control for trajectory tracking 
+The project focuses on the control of a mobile robot that intends to go from a given initial position to a desired goal position. The robot has to generate a path from initial to final position while avoiding obstacles simultaneously. The robot here is considered as a point robot. In order to find the path reinforcement learning is used.
 
 ![evol_cost](/images/control/Value_growth9.gif)
 
@@ -17,7 +17,7 @@ The project focuses on the control of a mobile robot that intends to go from a g
 **Figure above shows, how a robot uses partially observable states to reach from start to goal while avoiding the obstacles**
 
 1. Generated mesh grid and put obstacles in the grid
-2. Use Dynamic Programing to figure out the path that avoids obstacles while simultaneously moving from initial to goal
+2. Use value iteration to figure out the path that avoids obstacles while simultaneously moving from initial to goal
 3. Test the algorithm with different buffer size around the obstacles
 4. Smoothing the way-points in the path
 5. Generating trajectory that follows uniform speed of 1.5 through out the path
