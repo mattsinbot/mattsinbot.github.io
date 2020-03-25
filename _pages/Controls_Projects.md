@@ -5,6 +5,7 @@ header:
   image: "/images/control/control_profile_picture.png"
 ---
 
+
 ### Design of Neuro-Observer of Robots
 In this project we synthesized a nonlinear system-state-observer for two single-input-single-output
 nonlinear systems. We use neural network to capture nonlinearity of the observer. No linearity
@@ -16,6 +17,15 @@ observer for a single-link robot, rotating in vertical plane with two sets of ex
 ### EKF-for-Trajectory-Estimation
 The project focuses on the control of a mobile robot that intends to go from a given initial position to a desired goal position. The robot has to generate a path from initial to final position while avoiding obstacles simultaneously. The robot here is considered as a point mass robot.
 
+![evol_cost](/images/control/Value_growth9.gif)
+
+**Evolution of cost in Value-Iteration**
+
+![exp_op](/images/control//Obs_Avoidance196.gif)
+
+**Figure above shows, how a robot uses partially observable states to reach from start to goal while avoiding the obstacles**
+
+
 1. Generated mesh grid and put obstacles in the grid
 2. Use Dynamic Programing to figure out the path that avoids obstacles while simultaneously moving from initial to goal
 3. Test the algorithm with different buffer size around the obstacles
@@ -24,11 +34,3 @@ The project focuses on the control of a mobile robot that intends to go from a g
 6. Designing a Control-Law considering Actuator-Constraints while tracking the desired trajectory
 7. Designing an Observer by Reduced-Order-Observer method
 8. Implementing Separation-Principle to combine Controller and Observer
-
-![evol_cost](/images/control/Value_growth9.gif)
-
-**Evolution of cost in Value-Iteration**
-
-![exp_op](/images/control//Obs_Avoidance196.gif)
-
-**Figure above shows, how a robot uses partially observable states to reach from start to goal while avoiding the obstacles**
