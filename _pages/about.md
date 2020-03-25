@@ -17,6 +17,6 @@ Hi! I am Anirban Sinha. I am a fifth year PhD student working in robotics.
 
 **Other:** I am also a machine learning enthusiast. I credited the Machine learning course from the department of computer science. In the course project, I have completed several ML+CV related projects. I am also equipped with Data-Structures and Algorithms. I took the Data-Structures & Algorithms course in Udacity and successfully graduated.
 
-**Coding Skills:** C++, Python, MATLAB, Robot Operating System (ROS).
+**Coding Skills:** C++, Python, MATLAB, Robot Operating System.
 
 **Goal:** My short term goal is to have a comprehensive idea about the problems and state-of-the-art solution techniques, that are in use in autonomous driving industry with hands on experience. My long term goal is to generate new ideas, built on top of the current techniques and make them work in practice and revolutionize the field.
