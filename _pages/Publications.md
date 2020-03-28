@@ -1,6 +1,8 @@
 ---
 title: "Selected Publications"
 permalink: /publications/
+header:
+
 ---
 
 [1] Geometric Search Based Inverse Kinematics for 7-DoF Redundant Manipulators with Multiple Joint Offests, IEEE International Conference on Robotics and Automation, May 2019.
