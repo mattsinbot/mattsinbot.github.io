@@ -60,7 +60,9 @@ The matrix `H` in the update-KF step indicates linear measurement model (LASER) 
 The output is shown in animation in the top figure where blue and red triangles denote noisy measurements of the car obtained from the RADAR and LASER respectively. The estimated pose obtained by fusing these two sensor information using EKF is shown as green dots. Finally estimated path is compared with ground truth data in the figure above.
 
 ### EKF-SLAM using UTIAS dataset
-The repository can be found [here](https://github.com/mattsinbot/SLAM-Self-Driving-Car).
+The objective of this project is to localize a mobile robot moving in an unknown environment and also localize the landmarks in the environment. We have used EKF-filtering technique for the localization of the robot itself and the landmarks. The main output of the project is shown in the figure below. The estimated trajectory of the robot is plotted in green and the ground truth of the trajectory is shown in the orange lines. Similarly the estimated locations of the landmarks are plotted in brown triangles and their ground truth locations are plotted in red triangles. The repository can be found [here](https://github.com/mattsinbot/SLAM-Self-Driving-Car).
+
+![output figure](/images/robotics/slam_trajs_landmarks.png)
 
 ### Wrapping C for Python Use of IKFast
 The repository can be found[here](https://github.com/mattsinbot/Wrapping-C--for-Python-InverseKinematics).
