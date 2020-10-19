@@ -5,7 +5,7 @@ header:
   # image: "/images/deeplearning.jpg"
 ---
 
-Welcome to my website! I am a Post Doctoral Research Fellow at Clemson University. I am currently working on modeling human-robot interaction dynamics using data-driven techniques, particularly using reinforcement learning. Prior to joining at Clemson University, I completed my Ph.D. at Stony Brook University from the College of Engineering and Applied Sciences while minoring in Applied mathematics and Statistics.
+Welcome to my website! I am a Post Doctoral Research Fellow at Clemson University. I am currently working on modeling human-robot interaction dynamics using data-driven techniques, particularly using reinforcement learning. Prior to joining at Clemson University, I completed my Ph.D. at Stony Brook University from the College of Engineering and Applied Sciences while minoring in Applied Mathematics and Statistics and graduated in summer 2020.
 
 **Doctoral Research:** My research revolves around endowing robots with AI capabilities that ensures self-evaluation of robotic tasks and developing robust algorithms for the same while considering actuation and sensing uncertainties. One branch of my research is path planning of redundant manipulators for task constrained end-effector motions.
 
