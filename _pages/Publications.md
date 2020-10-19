@@ -9,7 +9,7 @@ header:
 
 [2] Computing Robust Inverse Kinematics Under Uncertainty, *ASME, International Design Engineering Technical Conference and Computer and Information Engineering (IDETC-CIE), August 2019*.
 
-[3] On Screw Linear Interpolation for Path Planning, *IEEE International Conference on Intelligent Robots and Systems (IROS), October 2020**.
+[3] On Screw Linear Interpolation for Path Planning, *IEEE International Conference on Intelligent Robots and Systems (IROS), October 2020*.
 
 [4] Robust Relative Hand Placement for Bi-Manual Tasks, *ASME, International Design Engineering Technical Conference and Computer and Information Engineering (IDETC-CIE), August 2020*
 

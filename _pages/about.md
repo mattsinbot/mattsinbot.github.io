@@ -5,11 +5,11 @@ header:
   # image: "/images/deeplearning.jpg"
 ---
 
-Hi! I am Anirban Sinha. I am a fifth year PhD student working in robotics.
+Welcome to my website! I am a Post Doctoral Research Fellow at Clemson University. I am currently working on modeling human-robot interaction dynamics using data-driven techniques, particularly using reinforcement learning. Prior to joining at Clemson University, I completed my Ph.D. at Stony Brook University from the College of Engineering and Applied Sciences while minoring in Applied mathematics and Statistics.
 
-**Research:** My research revolves around endowing robots with AI capabilities that ensures self-evaluation of robotic tasks and developing robust algorithms for the same while considering actuation and sensing uncertainties. One branch of my research is path planning of redundant manipulators under task constrained situations.
+**Doctoral Research:** My research revolves around endowing robots with AI capabilities that ensures self-evaluation of robotic tasks and developing robust algorithms for the same while considering actuation and sensing uncertainties. One branch of my research is path planning of redundant manipulators for task constrained end-effector motions.
 
-**Current Project:** Currently, I am working on a project in collaboration with graduate students who are specialized in computer vision. In that project we are trying to  predict trajectory of a sliding object by learning from the data collected from a vision system.
+**Current Project:**
 
 **Mentoring Experience:** I have mentored 3 MS students toward completing their thesis.
 
@@ -17,6 +17,8 @@ Hi! I am Anirban Sinha. I am a fifth year PhD student working in robotics.
 
 **Other:** I am also a machine learning enthusiast. I credited the Machine learning course from the department of computer science. In the course project, I have completed several ML+CV related projects. I am also equipped with Data-Structures and Algorithms. I took the Data-Structures & Algorithms course in Udacity and successfully graduated.
 
-**Coding Skills:** C++, Python, MATLAB, Robot Operating System.
+**Coding Skills:** C++, Python, MATLAB
 
-**Goal:** My short term goal is to have a comprehensive idea about the problems and state-of-the-art solution techniques, that are in use in autonomous driving industry with hands on experience. My long term goal is to generate new ideas, built on top of the current techniques and make them work in practice and revolutionize the field.
+**Operating Systems** Linux (Ubuntu), Windows, Robot Operating System (ROS)
+
+**Goal:** My short term goal is to have a comprehensive idea about the problems and their state-of-the-art solution techniques, that are in use in autonomous driving and/or arm robot industries with hands on experience while developing my own intuition on them and coming up with new ideas and creating prototypes of those ideas. My long term goal is to materializing my ideas in large scale industry production settings and revolutionizing the industries through new-age automation and robotics solutions.

@@ -109,9 +109,9 @@ analytics:
 author:
   name             : "Anirban Sinha"
   avatar           : "/images/profile1.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "PhD Candidate at The State University of New York"
-  location         : "Stony Brook, New York"
-  email            : "anirban.sinha@stonybrook.edu"
+  bio              : "Post-Doctoral Fellow, Clemson University"
+  location         : "Clemson, SC"
+  email            : "anirban.robotics@gmail.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
